@@ -1,9 +1,11 @@
-﻿namespace Sharp.Models;
+using System;
 
-public class ErrorViewModel
+namespace Sharp.Models
 {
-    public string? RequestId { get; set; }
+    public class ErrorViewModel
+    {
+        public string RequestId { get; set; }
 
-    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
 }
-
